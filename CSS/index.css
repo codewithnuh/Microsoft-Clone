@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background: #fff;
+    color: #262626;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main Nav */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    align-items: center;
+    height: 40px;
+}
+
+img.logo {
+    width: 110px;
+}
+
+.main-menu {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.main-menu li {
+    padding: 0 10px;
+}
+
+ul {
+    display: flex;
+}
+
+.main-menu li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.right-nav li a {
+    padding: 0 10px;
+}
+
+/* Showcase */
+.show-case {
+    width: 100%;
+    height: 400px;
+    background: url('Images/micro.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.show-case-text {
+    position: relative;
+    right: 25%;
+    bottom: 30%;
+    color: #ffffed;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+    margin: -13px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    margin: 2px 0;
+    border: 0;
+    font-size: 15px;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Home Cards */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.home-cards img {
+    width: 100%;
+}
+
+.home-cards a {
+    color: rgb(46, 109, 228);
+}
+
+/* Android Show-case */
+.android-showCase {
+    width: 100%;
+    height: 400px;
+    background: url('Images/RE2OLdz.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+
+
+}
+
+.android-show-case-text {
+    position: relative;
+    right: 25%;
+    bottom: 30%;
+    color: #262626;
+    line-height: 1.8;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #fff;
+    margin: 10px 0;
+    border: 0;
+    font-size: 15px;
+
+}
+
+.download-btn:hover {
+    opacity: 0.9;
+}
+
+/* Busniss */
+.busness-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.busness-cards img {
+    width: 100%;
+}
+
+.busness-cards a {
+    color: rgb(46, 109, 228);
+}
+
+span {
+    display: inline-block;
+    max-height: 10px;
+
+}
+
+span h3 {
+    margin: 12px 0;
+}
+
+/* Follow */
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+    font-weight: 700;
+
+}
+
+.follow img {
+    width: 25px;
+}
+
+.follow * {
+    margin-right: 20px;
+}
+
+/* LINKS */
+.links ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 13px;
+    padding: 35px 0;
+}
+
+.links-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.links li {
+    line-height: 2.9;
+}
+
+/* Footer */
+.footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+}
+
+.footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer div img {
+    margin-right: 10px;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+/* Media queries */
+@media screen and (max-width:700px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .main-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right--menu {
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+
+    }
+
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .busness-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .android-show-case-text {
+        right: 18%;
+        bottom: 30%;
+
+    }
+
+    .show-case-text {
+        right: 18%;
+        bottom: 30%;
+    }
+
+    .links-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .right-nav {
+        margin: 0 30px;
+    }
+
+
+
+}
+
+@media screen and (max-width:500px) {
+    .home-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .busness-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .android-show-case-text {
+        font-size: 12px;
+
+    }
+
+    .download-btn {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+
+    .android-show-case-text {
+        right: 18%;
+        bottom: 30%;
+
+    }
+
+    .show-case-text {
+        right: 8%;
+        bottom: 30%;
+    }
+
+    .links-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
